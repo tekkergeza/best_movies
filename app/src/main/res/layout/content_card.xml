@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_poster"
+        android:layout_marginRight="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/tv_rating"
+        android:layout_toRightOf="@id/iv_poster"
+        android:text="Inception" />
+
+    <TextView
+        android:id="@+id/tv_overview"
+        android:layout_marginTop="8dp"
+        android:maxLines="4"
+        android:ellipsize="end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_year"
+        android:layout_toRightOf="@id/iv_poster"
+        android:text="(Inception)"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv_rating"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:drawableRight="@drawable/ic_rating"
+        android:gravity="center"
+        android:text="8.3" />
+
+    <TextView
+        android:id="@+id/tv_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title"
+        android:layout_toRightOf="@id/iv_poster"
+        android:text="2010" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/info_text"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@id/iv_poster"
+        android:background="@color/hintColor" />
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/iv_poster"
+        android:text="Read more" />
+</RelativeLayout>

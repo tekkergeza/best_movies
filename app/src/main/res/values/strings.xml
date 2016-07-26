@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">BestMovies</string>
+    <string name="hint_search_text">looking for something?</string>
+
+    <!-- release year && movie length -->
+    <string name="year_and_length_scheme">%1$d, %2$d min</string>
+    <string name="budget_schema">Budget: %1$d $</string>
+    <string name="genre_schema">Category: %1$s</string>
+    <string name="original_title_scheme">(%1$s)</string>
+    <string name="production_countries_schema">Produced by: %1$s</string>
+    <string name="story_schema">Story:\n%1$s</string>
+    <string name="movies_schema">%1$s</string>
+
+</resources>
